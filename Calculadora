@@ -1,0 +1,81 @@
+package javaapplication1;
+
+import javax.swing.JOptionPane;
+
+public class projetoCalculadoraJavaSwing {
+    public static void main(String[] args) {
+        //SOLICITAR OPÇÃO
+        String opcao;
+        opcao = JOptionPane.showInputDialog("Escolha uma opção:"
+                + "\n1 - Soma;"
+                + "\n2 - Subtração;"
+                + "\n3 - Multiplicação;"
+                + "\n 4 -Divisão.");
+                
+         int opt;
+         opt = Integer.parseInt(opcao);
+         //OPCAO 1(ADICAO)
+         if(opt == 1){
+             String n1;
+             String n2;
+             n1 = JOptionPane.showInputDialog("Digite o primeiro valor");
+             n2 = JOptionPane.showInputDialog("Digite o segundo valor");
+             
+             double numero1 = Double.parseDouble(n1);
+             double numero2 = Double.parseDouble(n2);
+             
+             double resultado = numero1 + numero2;
+             String msg;
+             msg = "O resultado da operação é: " + resultado;
+             JOptionPane.showMessageDialog(null, msg);
+          }
+         //OPCAO 2(SUBTRACAO)
+         if(opt == 2){
+             String n1;
+             String n2;
+             n1 = JOptionPane.showInputDialog("Digite o primeiro valor");
+             n2 = JOptionPane.showInputDialog("Digite o segundo valor");
+             
+             double numero1 = Double.parseDouble(n1);
+             double numero2 = Double.parseDouble(n2);
+             
+             double resultado = numero1 - numero2;
+             String msg;
+             msg = "O resultado da operação é: " + resultado;
+             JOptionPane.showMessageDialog(null, msg);
+          }
+         //OPCAR 3(MULTIPLICACAO)
+         if(opt == 3){
+             String n1;
+             String n2;
+             n1 = JOptionPane.showInputDialog("Digite o primeiro valor");
+             n2 = JOptionPane.showInputDialog("Digite o segundo valor");
+             
+             double numero1 = Double.parseDouble(n1);
+             double numero2 = Double.parseDouble(n2);
+             
+             double resultado = numero1 * numero2;
+             String msg;
+             msg = "O resultado da operação é: " + resultado;
+             JOptionPane.showMessageDialog(null, msg);
+          }
+         //OPCAO 4 (DIVISAO)
+         if(opt == 4){
+             String n1;
+             String n2;
+             n1 = JOptionPane.showInputDialog("Digite o primeiro valor");
+             n2 = JOptionPane.showInputDialog("Digite o segundo valor");
+             
+             double numero1 = Double.parseDouble(n1);
+             double numero2 = Double.parseDouble(n2);
+             
+             double resultado = numero1 / numero2;
+             String msg;
+             msg = "O resultado da operação é: " + resultado;
+             JOptionPane.showMessageDialog(null, msg);
+          }
+                
+                
+    }
+    
+}
